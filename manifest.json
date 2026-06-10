@@ -1,0 +1,19 @@
+{
+  "name": "PokeSearch",
+  "short_name": "PokeSearch",
+  "description": "PWA app for checking basic characteristics of pokemons",
+  "theme_color": "#1d83d4",
+  "background_color": "#51c97a",
+  "display": "fullscreen",
+  "orientation": "portrait",
+  "lang": "pl-PL",
+  "scope": "/",
+  "start_url": "/pokesearch/",
+  "icons": [
+    {
+      "src": "./favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
