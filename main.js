@@ -55,9 +55,13 @@ function getPokemon(){
         }
         console.log(`error: ${error}`);
 
-        [pokemonName, pokemonHeight].forEach((el) => {
+        [pokemonName, pokemonHeight, pokemonWeight, pokemonStatsDiv, pokemonTypesDiv].forEach((el) => {
             el.textContent = ''
         });
+        hideLabels();
+        pokemonPicture.setAttribute("src", "https://i.gifer.com/origin/28/28bc7229a50a8f8c3696dc018c29be3d_w200.gif");
+        pokemonBackPicture.style.display = "none";
+        alert(error);
     }).finally(() => {
         input.value= '';
     })
