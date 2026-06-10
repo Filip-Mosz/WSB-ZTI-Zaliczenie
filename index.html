@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="styles.css" rel="stylesheet">
+    <title>84893</title>
+</head>
+<body>
+  <main>
+    <div style="margin-left: 5vw; margin-right: 5vw">
+      <div id="menu" style="display: flex; flex-direction: row-reverse; background: red">
+        <nav style="padding: 10px">
+          <a href="login.html" style="margin: 5px; padding: 3px; background: azure">Zaloguj się</a>
+          <a href="about.html" style="margin: 5px; padding: 3px; background: azure">O mnie</a>
+          <div id="user_name_display" style="margin: 5px; padding: 3px; background: azure"></div>
+        </nav>
+      </div>
+      <div class="main-div" >
+        <div class="search">
+          <div>
+            <p>
+              &#x1F50D;
+              <input type="text" placeholder="Jakiego pokemona szukasz?" style="margin: 10px">
+            </p>
+          </div>
+          <p class="error-message"></p>
+        </div>
+    </div>
+      <div class="present-div">
+        <div class="present-pic-div">
+          <img src="https://i.gifer.com/origin/28/28bc7229a50a8f8c3696dc018c29be3d_w200.gif" alt="pic" loading="lazy" class="poke-pic">
+          <img src="" alt="" class="poke-back-pic" style="display: none">
+        </div>
+        <div class="present-data-div">
+          <div id="poke-name">
+            <p class="poke-label">Nazwa</p>
+            <p class="name"></p>
+          </div>
+          <div id="poke-type">
+            <p class="poke-label">Typ</p>
+            <div id="types" class="d-flex flex-row"></div>
+          </div>
+          <div class="height" id="height">
+            <p class="poke-label">Wzrost</p>
+            <p class="height"></p>
+          </div>
+          <div class="weight" id="weight">
+            <p class="poke-label">Waga</p>
+            <p class="weight"></p>
+          </div>
+          <div id="poke-stats">
+            <p class="poke-label">Statystyki</p>
+            <div id="stats" class="d-flex flex-row"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer style="display: flex; flex-direction: row; align-items: center; border: red 3px solid">
+    <div>
+      <p>Projekt WSB Merito Gdynia 2026</p>
+      <p>Autor: Filip Moszczyński 84893</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="./main.js"></script>
+  <script src="./sw.js"></script>
+</body>
+</html>

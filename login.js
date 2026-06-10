@@ -79,9 +79,10 @@ function login(login, password) {
             user.login === login &&
             user.password === password
     );
-
+    console.log(`user found: ${current_user.login}`)
     if (current_user) {
-        localStorage.setItem( "logged_user", JSON.stringify(current_user) );
+        console.log(`current login: ${current_user.login}`)
+        localStorage.setItem( "logged_user", current_user.login );
         menu_div.innerHTML = `
         <nav>
             <a href="index.html">Main page</a>
