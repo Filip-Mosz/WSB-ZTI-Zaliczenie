@@ -48,3 +48,21 @@
     align-content: center;
     background: aliceblue;
 }
+
+@media screen and (max-width: 1000px){
+
+    .present-pic-div{
+        flex-direction: row;
+    }
+
+    .present-div{
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: 500px){
+    .present-div{
+        margin: 0;
+    }
+}
